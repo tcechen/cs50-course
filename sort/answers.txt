@@ -1,0 +1,12 @@
+sort1 uses: TODO selection sort
+
+How do you know?: TODO the slowest method between three sorting method. Always O(n^2)
+
+sort2 uses: TODO merged sort
+
+How do you know?: TODO real time is the smallest, it's the fastest sorting algorithm along three sorting method. O(nlogn)
+
+sort3 uses: TODO bubble sort
+
+How do you know?: TODO testing reversed version of the file, it's fasting than sort1, keep doing bubble sort will let small value bubble up to the front.
+best case omega(n)

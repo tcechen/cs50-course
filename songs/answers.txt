@@ -1,0 +1,2 @@
+calculate averge of energy, valence, and danceability of the users top 100 songs.
+the song with low score does not mean it's not uplift by someone

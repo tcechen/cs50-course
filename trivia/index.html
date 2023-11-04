@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+        <script>
+            // TODO: Add code to check answers to questions
+            document.addEventListener('DOMContentLoaded', function() {
+                // question 1
+                document.querySelector('#a1').addEventListener('click', function(event){
+                    let p1 = document.querySelector('#txt1');
+                    let ans1_block = document.querySelector('#a1');
+                    ans1_block.style.backgroundColor = '#F6635C';
+                    p1.innerHTML = `InCorrect.`;
+                });
+
+                document.querySelector('#a2').addEventListener('click', function(event){
+                    let p1 = document.querySelector('#txt1');
+                    let ans1_block = document.querySelector('#a2');
+                    ans1_block.style.backgroundColor = '#F6635C';
+                    p1.innerHTML = `InCorrect.`;
+                });
+
+                document.querySelector('#a3').addEventListener('click', function(event){
+                    let p1 = document.querySelector('#txt1');
+                    let ans1_block = document.querySelector('#a3');
+                    ans1_block.style.backgroundColor = '#F6635C';
+                    p1.innerHTML = `InCorrect.`;
+                });
+
+                document.querySelector('#a4').addEventListener('click', function(event){
+                    let p1 = document.querySelector('#txt1');
+                    let ans1_block = document.querySelector('#a4');
+                    ans1_block.style.backgroundColor = '#F6635C';
+                    p1.innerHTML = `InCorrect.`;
+                });
+
+                document.querySelector('#a5').addEventListener('click', function(event){
+                    let p1 = document.querySelector('#txt1');
+                    let ans1_block = document.querySelector('#a5');
+                    ans1_block.style.backgroundColor = '#898121';
+                    p1.innerHTML = `Correct.`;
+                });
+
+                // question 2
+                document.querySelector('form').addEventListener('submit', function(event) {
+                    let ans2 = document.querySelector("#answer2").value; // get the value of user input
+                    let p2 = document.querySelector('#txt2');
+                    let ans2_block = document.querySelector('#answer2');
+                    if (ans2.toUpperCase() == "SWITZERLAND")  // turn answer into uppercase
+                    {
+                        ans2_block.style.backgroundColor = '#898121'; // change background color of input block
+                        p2.innerHTML = `Correct.`;
+                    }
+                    else
+                    {
+                        ans2_block.style.backgroundColor = '#F6635C'; // change background color of input block
+                        p2.innerHTML = `InCorrect.`;
+                    }
+                    event.preventDefault();
+                });
+            });
+
+        </script>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+                <!-- TODO: Add multiple choice question here -->
+                <h3>What is the approximate ratio of people to sheep in New Zealand?</h3>
+                <button id = "a1">6 people per 1 sheep</button>
+                <button id = "a2">3 people per 1 sheep</button>
+                <button id = "a3">1 person per 1 sheep</button>
+                <button id = "a4">1 person per 3 sheep</button>
+                <button id = "a5">1 person per 6 sheep</button>
+                <p id = "txt1"></p>
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+                <!-- TODO: Add free response question here -->
+                <h3>In which country is it illegal to own only one guinea pig, as a lone guinea pig might get lonely?</h3>
+                <form>
+                    <input type = "text" autocomplete = "off" autofocus id = "answer2">
+                    <button type = "submit">Check Answer</button>
+                    <p id = "txt2"></p>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

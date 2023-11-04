@@ -1,2 +1,2 @@
 # cs50-course
-cs50 practices
+Attend EDX cs50 on-line courses, a respository to place all the homework.
